@@ -374,7 +374,7 @@
             }
 
             .dark\:text-white {
-                --text-opacity: 100;
+                --text-opacity: 1;
                 color: #fff;
                 color: rgba(255, 255, 255, var(--text-opacity))
             }
@@ -411,7 +411,9 @@
 
     <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
         <div class="flex justify-center pt-8 sm:justify-start sm:pt-0">
-            <h1>Sistem Informasi Rumah Sakit</h1>
+            <h1 style="color: white";>
+                Sistem Informasi Rumah Sakit
+            </h1>
         </div>
 
     </div>
