@@ -147,6 +147,12 @@
     });
 </script>
 
+<script src="{{ url('/vendor/laravel-filemanager/js/stand-alone-button.js') }}"></script>
+<script>
+    var route_prefix = "http://localhost/sirs/public/filemanager";
+    $('#lfm').filemanager('file', {prefix: route_prefix});
+</script>
+
 @yield('third_party_scripts')
 
 @stack('page_scripts')

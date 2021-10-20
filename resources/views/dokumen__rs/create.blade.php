@@ -5,7 +5,7 @@
         <div class="container-fluid">
             <div class="row mb-2">
                 <div class="col-sm-12">
-                    <h1>Create Dokumen  R S</h1>
+                    <h1>Create Dokumen RS</h1>
                 </div>
             </div>
         </div>

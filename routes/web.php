@@ -29,3 +29,7 @@ Route::get('/home', [
 Route::resource('ruangs', App\Http\Controllers\RuangController::class);
 
 Route::resource('dokumenRs', App\Http\Controllers\Dokumen_RSController::class);
+
+Route::group(['prefix' => 'laravel-filemanager', 'middleware' => ['web', 'auth']], function () {
+    \UniSharp\LaravelFilemanager\Lfm::routes();
+});
