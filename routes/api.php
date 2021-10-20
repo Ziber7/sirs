@@ -20,3 +20,5 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 
 Route::resource('ruangs', App\Http\Controllers\API\RuangAPIController::class);
+
+Route::resource('dokumen__rs', App\Http\Controllers\API\Dokumen_RSAPIController::class);
