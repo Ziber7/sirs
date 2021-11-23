@@ -5,7 +5,6 @@
                 <th>Nomor</th>
         <th>Nama</th>
         <th>Deskripsi</th>
-        <th>File</th>
                 <th colspan="3">Action</th>
             </tr>
         </thead>
@@ -15,10 +14,12 @@
                 <td>{{ $dokumenRS->nomor }}</td>
             <td>{{ $dokumenRS->nama }}</td>
             <td>{{ $dokumenRS->deskripsi }}</td>
-            <td>{{ $dokumenRS->file }}</td>
                 <td width="120">
                     {!! Form::open(['route' => ['dokumenRs.destroy', $dokumenRS->id], 'method' => 'delete']) !!}
                     <div class='btn-group'>
+                        <a href="{{ url($dokumenRS->file) }}" class='btn btn-default btn-xs' download>
+                            <i class="fas fa-download"></i>
+                        </a>
                         <a href="{{ route('dokumenRs.show', [$dokumenRS->id]) }}" class='btn btn-default btn-xs'>
                             <i class="far fa-eye"></i>
                         </a>

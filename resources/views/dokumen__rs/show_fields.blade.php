@@ -20,6 +20,7 @@
 <div class="col-sm-12">
     {!! Form::label('file', 'File:') !!}
     <p>{{ $dokumenRS->file }}</p>
+    <a href="{{ url($dokumenRS->file) }}" class="btn btn-dark" download>Download File</a>
 </div>
 
 <!-- Created At Field -->
